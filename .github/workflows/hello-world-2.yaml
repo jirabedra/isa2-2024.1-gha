@@ -8,7 +8,7 @@ jobs:
     - name: Create greeting.txt
       run: echo "hello world!" > greeting.txt
     - name: Show current local dir
-      run: echo "Current pwd is ${{pwd}}
+      run: echo "Current pwd is ${{pwd}}"
     - name: List files
       run: ls
 
