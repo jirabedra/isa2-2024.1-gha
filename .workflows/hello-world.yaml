@@ -1,0 +1,10 @@
+name: hello-world-workflow-lv1
+on: [push]
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat "hello world!" > ./my-greeting-folder/greeting-file.txt
+      - run: cd ./my-greeting-folder
+      - run: cat greeting-file.txt
