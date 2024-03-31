@@ -4,6 +4,8 @@ jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: cat "hello world!" > greeting.txt
-      - run: cat greeting.txt
+    - uses: actions/checkout@v4
+    - name: Create greeting.txt
+      run: echo "hello world!" > greeting.txt
+    - name: Show content of greeting.txt
+      run: cat greeting.txt
