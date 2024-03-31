@@ -1,0 +1,9 @@
+name: greet-lv1
+on: [push]
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat "hello world!" > greeting.txt
+      - run: cat greeting.txt
