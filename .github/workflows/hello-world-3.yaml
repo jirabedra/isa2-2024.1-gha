@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print Card Name
-      run: echo "Card name: ${{ github.event.project_card.note }}"
+      run: echo "Card name: ${{ github.event.project_card.content.title }}"
   greet:
     runs-on: ubuntu-latest
     steps:
