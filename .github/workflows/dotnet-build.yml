@@ -37,6 +37,11 @@ jobs:
     - name: Change Directory
       run: cd "TDD Avanzado"
 
+
+    - name: ls
+      run: ls
+
+
     - name: Install dependencies
       run: dotnet restore
 
