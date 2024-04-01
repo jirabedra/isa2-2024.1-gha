@@ -35,7 +35,7 @@ jobs:
       run: ls
 
     - name: Change Directory
-      run: cd './TDD Avanzado'
+      run: cd tdd
 
     - name: ls
       run: ls
