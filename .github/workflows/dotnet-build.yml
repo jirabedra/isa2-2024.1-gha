@@ -6,8 +6,8 @@ on:
     branches: [ main ]
     paths:
     - '**.cs'
-    - '**.csproj'
-    - '**.sln' # Add .sln files to trigger on changes to solution files
+    - '**/*.csproj'
+    - '**/*.sln' # Add .sln files to trigger on changes to solution files
 
 env:
   DOTNET_VERSION: '6.0.401' # The .NET SDK version to use
