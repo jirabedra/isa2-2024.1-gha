@@ -42,7 +42,7 @@ jobs:
 
 
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore tdd
 
     - name: Build
       run: dotnet build --configuration Release --no-restore tdd
