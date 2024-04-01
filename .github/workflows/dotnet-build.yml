@@ -28,6 +28,9 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
+    - name: Change Directory
+      run: cd "TDD Avanzado"
+
     - name: Install dependencies
       run: dotnet restore
 
