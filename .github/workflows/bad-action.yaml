@@ -1,4 +1,4 @@
-name: greet-lv2
+name: bad-gha
 on: [push]
 jobs:
   greet:
