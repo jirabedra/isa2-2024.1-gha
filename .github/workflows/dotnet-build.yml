@@ -47,7 +47,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore tdd
 
     - name: Test
-      run: dotnet test --logger "trx;logfilename=testResults.trx"
+      run: dotnet test --logger "trx;logfilename=testResults.trx" tdd
 
     - name: Cat content of .trx files
       run: |
