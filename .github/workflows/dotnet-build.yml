@@ -49,10 +49,10 @@ jobs:
     - name: Test
       run: dotnet test --logger "trx;logfilename=testResults.trx"
 
-      - name: Cat content of .trx files
-        run: |
-          while IFS= read -r trx_file; do
-            echo "Content of $trx_file:"
-            cat "$trx_file"
-            echo "--------------------"
-          done < trx_files.txt
+    - name: Cat content of .trx files
+      run: |
+        while IFS= read -r trx_file; do
+          echo "Content of $trx_file:"
+          cat "$trx_file"
+          echo "--------------------"
+        done < trx_files.txt
